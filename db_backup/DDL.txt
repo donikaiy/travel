@@ -1,0 +1,238 @@
+-- travel_db.continents definition
+
+CREATE TABLE `continents` (
+  `continent_id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  PRIMARY KEY (`continent_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.gallery definition
+
+CREATE TABLE `gallery` (
+  `gallery_entry` int NOT NULL AUTO_INCREMENT,
+  `gallery_id` int NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  PRIMARY KEY (`gallery_entry`),
+  KEY `idx_gallery_id` (`gallery_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1116 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.countries definition
+
+CREATE TABLE `countries` (
+  `country_id` int NOT NULL AUTO_INCREMENT,
+  `continent_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `gallery_id` int NOT NULL,
+  `history` text NOT NULL,
+  PRIMARY KEY (`country_id`),
+  KEY `continent_id` (`continent_id`),
+  KEY `gallery_id` (`gallery_id`),
+  CONSTRAINT `countries_ibfk_1` FOREIGN KEY (`continent_id`) REFERENCES `continents` (`continent_id`),
+  CONSTRAINT `countries_ibfk_2` FOREIGN KEY (`gallery_id`) REFERENCES `gallery` (`gallery_entry`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.cuisine definition
+
+CREATE TABLE `cuisine` (
+  `cuisine_id` int NOT NULL AUTO_INCREMENT,
+  `country_id` int NOT NULL,
+  `text` varchar(255) NOT NULL,
+  PRIMARY KEY (`cuisine_id`),
+  KEY `country_id` (`country_id`),
+  CONSTRAINT `cuisine_ibfk_1` FOREIGN KEY (`country_id`) REFERENCES `countries` (`country_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.cities definition
+
+CREATE TABLE `cities` (
+  `city_id` int NOT NULL AUTO_INCREMENT,
+  `country_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  PRIMARY KEY (`city_id`),
+  KEY `country_id` (`country_id`),
+  CONSTRAINT `cities_ibfk_1` FOREIGN KEY (`country_id`) REFERENCES `countries` (`country_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.flights definition
+
+CREATE TABLE `flights` (
+  `flight_id` int NOT NULL AUTO_INCREMENT,
+  `origin_city_id` int NOT NULL,
+  `destination_city_id` int NOT NULL,
+  `depart_at` timestamp NOT NULL,
+  `arrive_at` timestamp NOT NULL,
+  `number_of_stops` int NOT NULL,
+  `price` double NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  `airline` varchar(255) NOT NULL,
+  PRIMARY KEY (`flight_id`),
+  KEY `origin_city_id` (`origin_city_id`),
+  KEY `destination_city_id` (`destination_city_id`),
+  CONSTRAINT `flights_ibfk_1` FOREIGN KEY (`origin_city_id`) REFERENCES `cities` (`city_id`),
+  CONSTRAINT `flights_ibfk_2` FOREIGN KEY (`destination_city_id`) REFERENCES `cities` (`city_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2481 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.hotels definition
+
+CREATE TABLE `hotels` (
+  `hotel_id` int NOT NULL AUTO_INCREMENT,
+  `gallery_id` int NOT NULL,
+  `city_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `about` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `price` double NOT NULL,
+  `preferred_gallery_entry_id` int NOT NULL,
+  PRIMARY KEY (`hotel_id`),
+  KEY `gallery_id` (`gallery_id`),
+  KEY `city_id` (`city_id`),
+  KEY `hotels_ibfk_3` (`preferred_gallery_entry_id`),
+  CONSTRAINT `hotels_ibfk_1` FOREIGN KEY (`gallery_id`) REFERENCES `gallery` (`gallery_entry`),
+  CONSTRAINT `hotels_ibfk_2` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`),
+  CONSTRAINT `hotels_ibfk_3` FOREIGN KEY (`preferred_gallery_entry_id`) REFERENCES `gallery` (`gallery_entry`)
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.hotels_rating definition
+
+CREATE TABLE `hotels_rating` (
+  `rating_id` int NOT NULL AUTO_INCREMENT,
+  `hotel_id` int NOT NULL,
+  `rating` double NOT NULL,
+  PRIMARY KEY (`rating_id`),
+  KEY `hotel_id` (`hotel_id`),
+  CONSTRAINT `hotels_rating_ibfk_1` FOREIGN KEY (`hotel_id`) REFERENCES `hotels` (`hotel_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.restaurants definition
+
+CREATE TABLE `restaurants` (
+  `restaurant_id` int NOT NULL AUTO_INCREMENT,
+  `city_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  `price_symbols` varchar(255) NOT NULL,
+  PRIMARY KEY (`restaurant_id`),
+  KEY `city_id` (`city_id`),
+  CONSTRAINT `restaurants_ibfk_1` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.restaurants_rating definition
+
+CREATE TABLE `restaurants_rating` (
+  `rating_id` int NOT NULL AUTO_INCREMENT,
+  `restaurant_id` int NOT NULL,
+  `rating` double NOT NULL,
+  PRIMARY KEY (`rating_id`),
+  KEY `restaurant_id` (`restaurant_id`),
+  CONSTRAINT `restaurants_rating_ibfk_1` FOREIGN KEY (`restaurant_id`) REFERENCES `restaurants` (`restaurant_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=246 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.rooms definition
+
+CREATE TABLE `rooms` (
+  `room_id` int NOT NULL AUTO_INCREMENT,
+  `hotel_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  PRIMARY KEY (`room_id`),
+  KEY `hotel_id` (`hotel_id`),
+  CONSTRAINT `rooms_ibfk_1` FOREIGN KEY (`hotel_id`) REFERENCES `hotels` (`hotel_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1512 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.tours definition
+
+CREATE TABLE `tours` (
+  `tour_id` int NOT NULL AUTO_INCREMENT,
+  `city_id` int NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `days_nights` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `highlights` varchar(255) NOT NULL,
+  PRIMARY KEY (`tour_id`),
+  KEY `city_id` (`city_id`),
+  CONSTRAINT `tours_ibfk_1` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.tours_rating definition
+
+CREATE TABLE `tours_rating` (
+  `rating_id` int NOT NULL AUTO_INCREMENT,
+  `tour_id` int NOT NULL,
+  `rating` double NOT NULL,
+  PRIMARY KEY (`rating_id`),
+  KEY `ready_tour_id` (`tour_id`),
+  CONSTRAINT `tours_rating_ibfk_1` FOREIGN KEY (`tour_id`) REFERENCES `tours` (`tour_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.attractions definition
+
+CREATE TABLE `attractions` (
+  `attraction_id` int NOT NULL AUTO_INCREMENT,
+  `city_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `image_url` varchar(255) NOT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `opening_hours` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `best_time_to_visit` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `tickets_website` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `additional_information` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`attraction_id`),
+  KEY `city_id` (`city_id`),
+  CONSTRAINT `attractions_ibfk_1` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=248 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.hotel_services definition
+
+CREATE TABLE `hotel_services` (
+  `hotel_service_id` int NOT NULL AUTO_INCREMENT,
+  `hotel_id` int NOT NULL,
+  `text` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`hotel_service_id`),
+  KEY `hotel_id` (`hotel_id`),
+  CONSTRAINT `hotel_services_ibfk_1` FOREIGN KEY (`hotel_id`) REFERENCES `hotels` (`hotel_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=946 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.nearby_attractions definition
+
+CREATE TABLE `nearby_attractions` (
+  `attraction_id` int NOT NULL,
+  `hotel_id` int NOT NULL,
+  PRIMARY KEY (`attraction_id`,`hotel_id`),
+  KEY `hotel_id` (`hotel_id`),
+  CONSTRAINT `nearby_attractions_ibfk_1` FOREIGN KEY (`attraction_id`) REFERENCES `attractions` (`attraction_id`),
+  CONSTRAINT `nearby_attractions_ibfk_2` FOREIGN KEY (`hotel_id`) REFERENCES `hotels` (`hotel_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- travel_db.tour_program definition
+
+CREATE TABLE `tour_program` (
+  `tour_program_id` int NOT NULL AUTO_INCREMENT,
+  `tour_id` int NOT NULL,
+  `day` int NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`tour_program_id`),
+  KEY `ready_tour_id` (`tour_id`),
+  CONSTRAINT `tour_program_ibfk_1` FOREIGN KEY (`tour_id`) REFERENCES `tours` (`tour_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=617 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
