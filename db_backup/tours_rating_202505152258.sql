@@ -1,0 +1,137 @@
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (1,4.8),
+	 (2,4.9),
+	 (3,4.6),
+	 (4,4.7),
+	 (5,4.5),
+	 (6,4.8),
+	 (7,4.9),
+	 (8,4.7),
+	 (9,4.8),
+	 (10,4.9);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (11,4.6),
+	 (12,4.7),
+	 (13,4.8),
+	 (14,4.9),
+	 (15,4.7),
+	 (16,4.8),
+	 (17,4.6),
+	 (18,4.9),
+	 (19,4.7),
+	 (20,4.8);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (21,4.6),
+	 (22,4.7),
+	 (23,4.5),
+	 (24,4.8),
+	 (25,4.6),
+	 (26,4.7),
+	 (27,4.8),
+	 (28,4.9),
+	 (29,4.6),
+	 (30,4.7);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (31,4.9),
+	 (32,4.8),
+	 (33,4.6),
+	 (34,4.7),
+	 (35,4.5),
+	 (36,4.8),
+	 (37,4.9),
+	 (38,4.7),
+	 (39,4.6),
+	 (40,4.8);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (41,4.7),
+	 (42,4.9),
+	 (43,4.6),
+	 (44,4.8),
+	 (45,4.5),
+	 (46,4.7),
+	 (47,4.8),
+	 (48,4.9),
+	 (49,4.6),
+	 (50,4.7);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (51,4.8),
+	 (52,4.9),
+	 (53,4.7),
+	 (54,4.8),
+	 (55,4.6),
+	 (56,4.7),
+	 (57,4.5),
+	 (58,4.8),
+	 (59,4.9),
+	 (60,4.6);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (61,4.8),
+	 (62,4.7),
+	 (63,4.9),
+	 (64,4.6),
+	 (65,4.7),
+	 (66,4.5),
+	 (67,4.8),
+	 (68,4.6),
+	 (69,4.7),
+	 (70,4.8);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (71,4.9),
+	 (72,4.6),
+	 (73,4.7),
+	 (74,4.5),
+	 (75,4.8),
+	 (76,4.6),
+	 (77,4.7),
+	 (78,4.5),
+	 (79,4.8),
+	 (80,4.7);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (81,4.9),
+	 (82,4.8),
+	 (83,4.7),
+	 (84,4.9),
+	 (85,4.6),
+	 (86,4.8),
+	 (87,4.7),
+	 (88,4.9),
+	 (89,4.6),
+	 (90,4.8);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (91,4.5),
+	 (92,4.7),
+	 (93,4.8),
+	 (94,4.9),
+	 (95,4.6),
+	 (96,4.8),
+	 (97,4.7),
+	 (98,4.9),
+	 (99,4.6),
+	 (100,4.8);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (101,4.5),
+	 (102,4.7),
+	 (103,4.8),
+	 (104,4.9),
+	 (105,4.6),
+	 (106,4.8),
+	 (107,4.5),
+	 (108,4.7),
+	 (109,4.6),
+	 (110,4.8);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (111,4.7),
+	 (112,4.9),
+	 (113,4.6),
+	 (114,4.8),
+	 (115,4.5),
+	 (116,4.7),
+	 (117,4.6),
+	 (118,4.8),
+	 (119,4.7),
+	 (120,4.9);
+INSERT INTO travel_db.tours_rating (tour_id,rating) VALUES
+	 (121,4.6),
+	 (122,4.8),
+	 (123,4.7),
+	 (124,4.9);

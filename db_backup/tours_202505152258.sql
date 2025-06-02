@@ -1,0 +1,137 @@
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (1,'https://i.imgur.com/jrdjgVF.jpeg','Parisian Highlights','3 Days / 2 Nights','Discover the romantic charm of Paris with iconic landmarks and cultural gems.','Eiffel Tower, Louvre Museum, Seine River Cruise'),
+	 (1,'https://i.imgur.com/tzfJHsh.png','Grand Paris Adventure','7 Days / 6 Nights','Immerse yourself in Paris with in-depth exploration of art, history, and cuisine.','Versailles Palace, Montmartre, Notre-Dame, Wine Tasting'),
+	 (2,'https://i.imgur.com/b9GuBAK.png','Nice Coastal Escape','4 Days / 3 Nights','Experience the vibrant French Riviera with sun-soaked beaches and historic charm.','Promenade des Anglais, Old Town, Matisse Museum'),
+	 (2,'https://i.imgur.com/nrFItku.png','Riviera Explorer','6 Days / 5 Nights','Dive into the heart of the French Riviera with day trips to nearby gems.','Monaco, Cannes, Antibes, Hilltop Villages'),
+	 (3,'https://i.imgur.com/vmGm6Xm.png','Madrid Essentials','3 Days / 2 Nights','Uncover the vibrant spirit of Spain’s capital with art and history.','Prado Museum, Royal Palace, Retiro Park'),
+	 (3,'https://i.imgur.com/thXWzdT.jpeg','Madrid & Beyond','8 Days / 7 Nights','A comprehensive journey through Madrid and nearby historic cities.','Toledo, Segovia, Flamenco Show, Tapas Tour'),
+	 (4,'https://i.imgur.com/hIhYaDQ.png','Barcelona Highlights','4 Days / 3 Nights','Explore the artistic and architectural wonders of Barcelona.','Sagrada Familia, Park Güell, Gothic Quarter'),
+	 (4,'https://i.imgur.com/rKORw6D.png','Catalan Odyssey','7 Days / 6 Nights','A deep dive into Barcelona and Catalonia’s rich culture and landscapes.','Montserrat, Costa Brava, Dalí Museum'),
+	 (5,'https://i.imgur.com/taXeNtH.png','Eternal City Snapshot','3 Days / 2 Nights','Discover Rome’s ancient wonders and vibrant piazzas.','Colosseum, Roman Forum, Pantheon'),
+	 (5,'https://i.imgur.com/loxWMNh.png','Rome Immersion','7 Days / 6 Nights','A comprehensive exploration of Rome’s history, art, and cuisine.','Vatican Museums, Appian Way, Cooking Class');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (6,'https://i.imgur.com/X7N8qvc.png','Milan Fashion & Art','3 Days / 2 Nights','Experience Milan’s elegance with art, fashion, and history.','Duomo, Last Supper, Galleria Vittorio Emanuele II'),
+	 (6,'https://i.imgur.com/mHOccOn.png','Lombardy Explorer','6 Days / 5 Nights','Discover Milan and the stunning lakes of Lombardy.','Lake Como, Bergamo, Fashion District'),
+	 (7,'https://i.imgur.com/0b509B4.png','Venetian Romance','3 Days / 2 Nights','Explore the magical canals and history of Venice.','St. Mark’s Square, Doge’s Palace, Gondola Ride'),
+	 (7,'https://i.imgur.com/lOIGJLu.jpeg','Venice & Islands','6 Days / 5 Nights','A deep dive into Venice and its lagoon islands.','Murano, Burano, Grand Canal Cruise'),
+	 (8,'https://i.imgur.com/JhceHgo.png','London Highlights','4 Days / 3 Nights','Discover London’s iconic landmarks and royal history.','Tower of London, Buckingham Palace, British Museum'),
+	 (8,'https://i.imgur.com/1lVWPAA.png','Ultimate London Journey','7 Days / 6 Nights','A comprehensive exploration of London and nearby treasures.','Stonehenge, Bath, West End Show'),
+	 (9,'https://i.imgur.com/xVDmolS.png','Edinburgh Essentials','3 Days / 2 Nights','Uncover the historic charm of Scotland’s capital.','Edinburgh Castle, Royal Mile, Arthur’s Seat'),
+	 (9,'https://i.imgur.com/YSRv3JG.jpeg','Scottish Highlands Adventure','7 Days / 6 Nights','Explore Edinburgh and the rugged beauty of the Highlands.','Loch Ness, Glencoe, Whisky Tasting'),
+	 (10,'https://i.imgur.com/HXeMeb0.png','Vienna Classics','3 Days / 2 Nights','Experience Vienna’s imperial heritage and musical legacy.','Schönbrunn Palace, St. Stephen’s Cathedral, Opera House'),
+	 (10,'https://i.imgur.com/WFvw1pF.png','Danube Valley Explorer','6 Days / 5 Nights','Discover Vienna and the scenic Danube Valley.','Melk Abbey, Wachau Valley, Mozart Concert');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (11,'https://i.imgur.com/vkuNdOP.png','Salzburg Sound of Music','3 Days / 2 Nights','Explore Salzburg’s musical heritage and alpine beauty.','Mirabell Gardens, Mozart’s Birthplace, Hohensalzburg Fortress'),
+	 (11,'https://i.imgur.com/dpObw4E.png','Alpine Salzburg Journey','6 Days / 5 Nights','A deep dive into Salzburg and the Austrian Alps.','Hallstatt, Berchtesgaden, Eagle’s Nest'),
+	 (12,'https://i.imgur.com/yYFAuFS.jpeg','Sofia Cultural Snapshot','3 Days / 2 Nights','Discover the historic and cultural heart of Bulgaria.','Alexander Nevsky Cathedral, Vitosha Boulevard, National Museum'),
+	 (12,'https://i.imgur.com/Aa6uEs6.jpeg','Bulgarian Heritage','7 Days / 6 Nights','Explore Sofia and Bulgaria’s ancient sites.','Rila Monastery, Plovdiv, Thracian Tombs'),
+	 (13,'https://i.imgur.com/bKhYJlc.png','Varna Seaside Escape','3 Days / 2 Nights','Enjoy the Black Sea coast with history and beaches.','Sea Garden, Archaeological Museum, Aladzha Monastery'),
+	 (13,'https://i.imgur.com/WJs8yT0.png','Black Sea Explorer','6 Days / 5 Nights','Discover Varna and the Black Sea coast’s treasures.','Balchik Palace, Nessebar, Cape Kaliakra'),
+	 (14,'https://i.imgur.com/eZ2H8gS.jpeg','Stockholm Highlights','4 Days / 3 Nights','Explore Stockholm’s islands and Nordic charm.','Gamla Stan, Vasa Museum, City Hall'),
+	 (14,'https://i.imgur.com/pwPpbPj.jpeg','Archipelago Adventure','7 Days / 6 Nights','A journey through Stockholm and its stunning archipelago.','Sandhamn, Drottningholm Palace, ABBA Museum'),
+	 (15,'https://i.imgur.com/SCYD1U7.png','Gothenburg Coastal Charm','3 Days / 2 Nights','Discover Gothenburg’s maritime heritage and vibrant culture.','Haga District, Universeum, Fish Market'),
+	 (15,'https://i.imgur.com/awVn1ds.png','West Coast Explorer','6 Days / 5 Nights','Explore Gothenburg and Sweden’s west coast islands.','Marstrand, Fjällbacka, Liseberg Amusement Park');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (16,'https://i.imgur.com/GocnbE8.png','Cairo Pyramids Adventure','3 Days / 2 Nights','Uncover the ancient wonders of Cairo.','Giza Pyramids, Sphinx, Egyptian Museum'),
+	 (16,'https://i.imgur.com/DSYea7a.png','Nile Valley Journey','7 Days / 6 Nights','A deep dive into Cairo and the Nile’s treasures.','Saqqara, Coptic Cairo, Khan el-Khalili Bazaar'),
+	 (17,'https://i.imgur.com/XIPBwO3.png','Alexandria Coastal Gems','3 Days / 2 Nights','Explore the Mediterranean charm of Alexandria.','Bibliotheca Alexandrina, Qaitbay Citadel, Montazah Palace'),
+	 (17,'https://i.imgur.com/ecBpUKo.png','Alexandria & Beyond','6 Days / 5 Nights','Discover Alexandria and nearby historic sites.','Rosetta, El Alamein, Pompey’s Pillar'),
+	 (18,'https://i.imgur.com/fVJKW3F.jpeg','Casablanca Highlights','3 Days / 2 Nights','Experience the modern and historic charm of Casablanca.','Hassan II Mosque, Corniche, Old Medina'),
+	 (18,'https://i.imgur.com/YW3GLLS.png','Moroccan Coastal Journey','7 Days / 6 Nights','Explore Casablanca and Morocco’s coastal cities.','Rabat, Tangier, Asilah'),
+	 (19,'https://i.imgur.com/wxRW4yU.png','Marrakesh Souk Adventure','4 Days / 3 Nights','Dive into the vibrant heart of Marrakesh.','Jemaa el-Fnaa, Bahia Palace, Majorelle Garden'),
+	 (19,'https://i.imgur.com/CVWzpm8.png','Atlas Mountains Explorer','7 Days / 6 Nights','Discover Marrakesh and the Atlas Mountains.','Ouarzazate, Ait Benhaddou, Berber Villages'),
+	 (20,'https://i.imgur.com/qWbKtle.png','Jo’burg Cultural Snapshot','3 Days / 2 Nights','Explore the dynamic history and culture of Johannesburg.','Apartheid Museum, Soweto, Constitution Hill'),
+	 (20,'https://i.imgur.com/vyCnXyo.png','South African Safari','7 Days / 6 Nights','A journey through Johannesburg and nearby wildlife reserves.','Kruger National Park, Lion Park, Cradle of Humankind');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (21,'https://i.imgur.com/FVC1ANu.png','Cape Town Highlights','3 Days / 2 Nights','Discover the vibrant beauty of Cape Town with iconic landmarks and stunning landscapes.','Table Mountain, V&A Waterfront, Cape Point'),
+	 (21,'https://i.imgur.com/EVt7Sba.png','Cape Explorer','7 Days / 6 Nights','Immerse yourself in Cape Town’s culture, history, and natural wonders with coastal and wine region adventures.','Robben Island, Stellenbosch, Garden Route'),
+	 (22,'https://i.imgur.com/7EDGwVK.png','Nairobi Safari Snapshot','3 Days / 2 Nights','Experience Nairobi’s wildlife and cultural vibrancy with urban and safari highlights.','Nairobi National Park, Giraffe Centre, Karen Blixen Museum'),
+	 (22,'https://i.imgur.com/zDSKeGv.png','Kenyan Wildlife Journey','7 Days / 6 Nights','Embark on an unforgettable safari adventure through Nairobi and Kenya’s iconic reserves.','Maasai Mara, Amboseli, Bomas of Kenya'),
+	 (23,'https://i.imgur.com/ortyEbn.png','Windhoek Cultural Escape','3 Days / 2 Nights','Uncover the unique blend of colonial and African heritage in Namibia’s capital.','Christuskirche, Independence Memorial, Daan Viljoen Game Reserve'),
+	 (23,'https://i.imgur.com/tedLPof.png','Namibian Horizons','7 Days / 6 Nights','Explore Windhoek and Namibia’s breathtaking deserts and wildlife sanctuaries.','Sossusvlei, Etosha National Park, Twyfelfontein'),
+	 (24,'https://i.imgur.com/6ta9Qrl.png','Seychelles Island Bliss','4 Days / 3 Nights','Relax in Victoria’s tropical paradise with pristine beaches and lush rainforests.','Anse Lazio, Vallée de Mai, Morne Seychellois'),
+	 (24,'https://i.imgur.com/vjmaIJy.png','Seychelles Archipelago Adventure','7 Days / 6 Nights','Discover Victoria and the Seychelles’ outer islands with snorkeling and nature exploration.','Praslin, La Digue, Curieuse Island'),
+	 (25,'https://i.imgur.com/hVNswVf.png','Beau Vallon Beach Getaway','3 Days / 2 Nights','Enjoy the vibrant beach life and water activities of Beau Vallon.','Beau Vallon Beach, Sir Selwyn Clarke Market, Sunset Cruise'),
+	 (25,'https://i.imgur.com/id56dOH.png','Mahé Island Explorer','6 Days / 5 Nights','Dive into Beau Vallon’s coastal charm and Mahé’s natural and cultural treasures.','Anse Intendance, Victoria Botanical Gardens, Creole Cooking Class');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (26,'https://i.imgur.com/tZPoO4b.png','LA Highlights','4 Days / 3 Nights','Experience the glitz and glamour of Los Angeles with iconic sights and beaches.','Hollywood Walk of Fame, Santa Monica Pier, Griffith Observatory'),
+	 (26,'https://i.imgur.com/dexaucl.png','SoCal Adventure','7 Days / 6 Nights','Explore Los Angeles and Southern California’s diverse landscapes and cultural hubs.','Disneyland, Joshua Tree, Venice Beach'),
+	 (27,'https://i.imgur.com/xe7cJSN.png','NYC Essentials','3 Days / 2 Nights','Discover the vibrant heart of New York City with its iconic landmarks and culture.','Statue of Liberty, Central Park, Times Square'),
+	 (27,'https://i.imgur.com/MQ1lpjK.png','Big Apple Immersion','7 Days / 6 Nights','Dive deep into NYC’s boroughs, museums, and culinary scene with urban adventures.','Brooklyn Bridge, The Met, Broadway Show'),
+	 (28,'https://i.imgur.com/QmhHSSi.png','Vegas Extravaganza','3 Days / 2 Nights','Experience the dazzling entertainment and iconic sights of Las Vegas.','Bellagio Fountains, The Strip, Fremont Street'),
+	 (28,'https://i.imgur.com/gF1CaeG.png','Desert Oasis Journey','6 Days / 5 Nights','Explore Las Vegas and nearby natural wonders for a mix of glamour and adventure.','Grand Canyon, Red Rock Canyon, Cirque du Soleil'),
+	 (29,'https://i.imgur.com/4zo31vv.png','Toronto City Highlights','3 Days / 2 Nights','Uncover Toronto’s vibrant urban culture and scenic waterfront.','CN Tower, Distillery District, Royal Ontario Museum'),
+	 (29,'https://i.imgur.com/cBR4FV5.png','Ontario Explorer','7 Days / 6 Nights','Discover Toronto and Ontario’s natural and cultural treasures.','Niagara Falls, Algonquin Park, Casa Loma'),
+	 (30,'https://i.imgur.com/w53UfGC.jpeg','Vancouver Coastal Charm','4 Days / 3 Nights','Experience Vancouver’s stunning blend of urban life and natural beauty.','Stanley Park, Granville Island, Capilano Suspension Bridge'),
+	 (30,'https://i.imgur.com/3thsw2H.png','British Columbia Adventure','7 Days / 6 Nights','Explore Vancouver and BC’s mountains, islands, and indigenous culture.','Whistler, Victoria, Grouse Mountain');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (31,'https://i.imgur.com/E4hU55g.jpeg','Mexico City Highlights','3 Days / 2 Nights','Discover the vibrant history and culture of Mexico’s bustling capital.','Zócalo, Frida Kahlo Museum, Templo Mayor'),
+	 (31,'https://i.imgur.com/8KxQYxB.png','Aztec & Colonial Journey','7 Days / 6 Nights','Immerse yourself in Mexico City’s ancient ruins and colonial heritage.','Teotihuacan, Xochimilco, Chapultepec Castle'),
+	 (32,'https://i.imgur.com/k6FYSKy.png','Cancun Beach Escape','4 Days / 3 Nights','Relax in Cancun’s turquoise waters and explore nearby Mayan ruins.','Playa Delfines, Chichen Itza, Tulum'),
+	 (32,'https://i.imgur.com/PFK4Q4X.png','Yucatán Peninsula Adventure','7 Days / 6 Nights','Dive into Cancun’s beaches, cenotes, and rich Mayan history.','Cozumel, Ek Balam, Isla Mujeres'),
+	 (33,'https://i.imgur.com/cZbu8Z7.png','Santo Domingo Colonial Charm','3 Days / 2 Nights','Explore the historic heart of the Caribbean’s first European city.','Zona Colonial, Alcázar de Colón, Catedral Primada'),
+	 (33,'https://i.imgur.com/eWKU9xh.png','Dominican Cultural Journey','6 Days / 5 Nights','Discover Santo Domingo and the Dominican Republic’s vibrant culture and coasts.','Saona Island, Los Haitises, Merengue Class'),
+	 (34,'https://i.imgur.com/TNOSrJy.png','Punta Cana Beach Bliss','3 Days / 2 Nights','Relax on Punta Cana’s pristine beaches with water adventures.','Bávaro Beach, Scape Park, Catamaran Cruise'),
+	 (34,'https://i.imgur.com/9SWDnqy.png','Eastern Dominican Explorer','7 Days / 6 Nights','Experience Punta Cana’s beaches and the Dominican Republic’s natural wonders.','Samana Bay, Macao Beach, Indigenous Eyes Ecological Park'),
+	 (35,'https://i.imgur.com/GwTr5D8.png','Nassau Island Highlights','3 Days / 2 Nights','Enjoy Nassau’s vibrant culture and turquoise waters.','Junkanoo Beach, Atlantis Resort, Straw Market'),
+	 (35,'https://i.imgur.com/xwO41IR.png','Bahamas Island Hopping','6 Days / 5 Nights','Explore Nassau and the Bahamas’ stunning islands and marine life.','Exuma Cays, Blue Lagoon Island, Rose Island');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (36,'https://i.imgur.com/APi6Wds.png','Beijing Imperial Snapshot','4 Days / 3 Nights','Discover Beijing’s ancient imperial history and modern vibrancy.','Forbidden City, Great Wall, Temple of Heaven'),
+	 (36,'https://i.imgur.com/ztDpc5g.png','China’s Capital Odyssey','7 Days / 6 Nights','Immerse yourself in Beijing’s historic landmarks and cultural treasures.','Summer Palace, Hutongs, Peking Duck Dinner'),
+	 (37,'https://i.imgur.com/oq7gjiw.png','Shanghai Skyline Adventure','3 Days / 2 Nights','Experience Shanghai’s futuristic skyline and historic charm.','The Bund, Yu Garden, Oriental Pearl Tower'),
+	 (37,'https://i.imgur.com/sISu4rh.png','Shanghai & Water Towns','6 Days / 5 Nights','Explore Shanghai and nearby ancient water towns for a blend of modern and traditional.','Zhujiajiao, Suzhou, Jade Buddha Temple'),
+	 (38,'https://i.imgur.com/XbaiZqX.png','Delhi Cultural Highlights','3 Days / 2 Nights','Uncover New Delhi’s vibrant history and bustling markets.','India Gate, Qutub Minar, Chandni Chowk'),
+	 (38,'https://i.imgur.com/F9TmSNk.png','Golden Triangle Journey','7 Days / 6 Nights','Discover Delhi and India’s Golden Triangle with iconic monuments and culture.','Taj Mahal, Jaipur, Humayun’s Tomb'),
+	 (39,'https://i.imgur.com/UqrxpLh.jpeg','Mumbai City Vibes','3 Days / 2 Nights','Experience Mumbai’s dynamic blend of Bollywood, history, and coastal charm.','Gateway of India, Elephanta Caves, Marine Drive'),
+	 (39,'https://i.imgur.com/IB8pxbq.png','Maharashtra Explorer','6 Days / 5 Nights','Dive into Mumbai and Maharashtra’s cultural and natural treasures.','Ajanta Caves, Colaba, Sanjay Gandhi National Park'),
+	 (40,'https://i.imgur.com/S06XdRa.png','Jakarta Urban Adventure','3 Days / 2 Nights','Explore Jakarta’s vibrant mix of history, culture, and modern energy.','National Monument, Old Batavia, Istiqlal Mosque'),
+	 (40,'https://i.imgur.com/6N0FNR3.png','Java Island Discovery','7 Days / 6 Nights','Discover Jakarta and Java’s ancient temples and natural beauty.','Borobudur, Yogyakarta, Thousand Islands');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (41,'https://i.imgur.com/bF0t9aI.jpeg','Bali Island Escape','4 Days / 3 Nights','Relax in Bali’s tropical paradise with temples, beaches, and rice terraces.','Uluwatu Temple, Tanah Lot, Kuta Beach'),
+	 (41,'https://i.imgur.com/YpzMUc7.png','Bali Cultural Odyssey','7 Days / 6 Nights','Immerse yourself in Bali’s spiritual heart, jungles, and coastal beauty.','Ubud Monkey Forest, Tegalalang Rice Terraces, Nusa Penida'),
+	 (42,'https://i.imgur.com/qONlPLY.jpeg','Bangkok Essentials','3 Days / 2 Nights','Discover the vibrant heart of Bangkok with its golden temples and bustling markets.','Grand Palace, Wat Arun, Chatuchak Market'),
+	 (42,'https://i.imgur.com/kDpvnY8.png','Thai Cultural Odyssey','7 Days / 6 Nights','Immerse yourself in Bangkok’s rich heritage, from ancient ruins to floating markets and nearby historic sites.','Ayutthaya, Damnoen Saduak, Jim Thompson House'),
+	 (43,'https://i.imgur.com/au5pCh6.png','Chiang Mai Highlights','3 Days / 2 Nights','Explore Chiang Mai’s ancient temples and vibrant night markets in the heart of northern Thailand.','Wat Phra That Doi Suthep, Night Bazaar, Warorot Market'),
+	 (43,'https://i.imgur.com/4yYLLZI.png','Northern Thai Adventure','7 Days / 6 Nights','Dive into Chiang Mai’s cultural and natural wonders, with jungle treks and hill tribe visits.','Doi Inthanon, Elephant Sanctuary, Chiang Dao Caves'),
+	 (44,'https://i.imgur.com/po8ekoy.png','Phuket Beach Escape','4 Days / 3 Nights','Relax on Phuket’s pristine beaches and explore its vibrant nightlife and island gems.','Patong Beach, Phi Phi Islands, Big Buddha'),
+	 (44,'https://i.imgur.com/FgyT0c2.png','Andaman Sea Journey','7 Days / 6 Nights','Discover Phuket’s coastal beauty and nearby islands with snorkeling and cultural experiences.','Similan Islands, James Bond Island, Phuket Old Town'),
+	 (45,'https://i.imgur.com/mqbA6lX.jpeg','Tokyo City Highlights','3 Days / 2 Nights','Experience Tokyo’s dynamic blend of futuristic innovation and traditional charm.','Shibuya Crossing, Senso-ji Temple, Tsukiji Market'),
+	 (45,'https://i.imgur.com/MYzlAof.jpeg','Japan’s Capital Explorer','7 Days / 6 Nights','Delve into Tokyo’s vibrant neighborhoods and nearby cultural landmarks for an unforgettable journey.','Hakone, Meiji Shrine, Akihabara');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (46,'https://i.imgur.com/AW7yzZ0.png','Osaka Urban Adventure','3 Days / 2 Nights','Discover Osaka’s lively food scene and historic landmarks in Japan’s culinary capital.','Osaka Castle, Dotonbori, Umeda Sky Building'),
+	 (46,'https://i.imgur.com/NPRRNvD.png','Kansai Cultural Journey','7 Days / 6 Nights','Explore Osaka and the Kansai region’s historic temples, castles, and natural beauty.','Kyoto, Nara, Koya-san'),
+	 (47,'https://i.imgur.com/YTt40Ij.png','Dubai Highlights','3 Days / 2 Nights','Marvel at Dubai’s futuristic skyline and luxurious attractions in the heart of the desert.','Burj Khalifa, Dubai Mall, Desert Safari'),
+	 (47,'https://i.imgur.com/hdH6TYN.png','Emirati Adventure','6 Days / 5 Nights','Experience Dubai’s blend of modern wonders and traditional Bedouin culture with coastal and desert excursions.','Palm Jumeirah, Al Ain, Dubai Marina'),
+	 (48,'https://i.imgur.com/VgsBbwI.png','Abu Dhabi Cultural Escape','3 Days / 2 Nights','Uncover Abu Dhabi’s rich heritage and stunning architecture in the UAE’s capital.','Sheikh Zayed Mosque, Louvre Abu Dhabi, Corniche'),
+	 (48,'https://i.imgur.com/KDhBoqr.png','UAE Capital Odyssey','6 Days / 5 Nights','Dive into Abu Dhabi’s cultural landmarks and nearby desert and coastal adventures.','Yas Island, Liwa Oasis, Qasr Al Watan'),
+	 (49,'https://i.imgur.com/yRL18tg.png','Singapore City Highlights','3 Days / 2 Nights','Explore Singapore’s futuristic skyline, lush gardens, and vibrant cultural districts.','Marina Bay Sands, Gardens by the Bay, Chinatown'),
+	 (49,'https://i.imgur.com/EQwgoe4.png','Lion City Explorer','6 Days / 5 Nights','Immerse yourself in Singapore’s blend of innovation, heritage, and island adventures.','Sentosa Island, Haw Par Villa, Pulau Ubin'),
+	 (50,'https://i.imgur.com/ctyjed6.png','Maldives Island Bliss','4 Days / 3 Nights','Relax in Male’s tropical paradise with turquoise waters and vibrant coral reefs.','Hulhumale Beach, Sultan Park, Fish Market'),
+	 (50,'https://i.imgur.com/PVzzart.png','Maldives Atoll Adventure','7 Days / 6 Nights','Discover Male and the Maldives’ stunning atolls with snorkeling and island-hopping.','South Male Atoll, Maafushi, Banana Reef');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (51,'https://i.imgur.com/m7Oph3Z.png','Sao Paulo City Vibes','3 Days / 2 Nights','Experience Sao Paulo’s dynamic urban culture, art, and culinary scene.','Avenida Paulista, Ibirapuera Park, Pinacoteca'),
+	 (51,'https://i.imgur.com/iVsYO9u.png','Paulista Cultural Journey','6 Days / 5 Nights','Dive into Sao Paulo’s vibrant neighborhoods and nearby natural and historic sites.','Embu das Artes, Campos do Jordão, MASP'),
+	 (52,'https://i.imgur.com/2wXpM15.png','Rio Highlights','3 Days / 2 Nights','Discover Rio’s iconic beaches, vibrant culture, and breathtaking landscapes.','Christ the Redeemer, Copacabana Beach, Sugarloaf Mountain'),
+	 (52,'https://i.imgur.com/kWgm5zw.jpeg','Carioca Adventure','7 Days / 6 Nights','Explore Rio’s carnival spirit, lush rainforests, and coastal beauty in depth.','Tijuca Forest, Ilha Grande, Sambadrome'),
+	 (53,'https://i.imgur.com/rRsucXk.png','Buenos Aires Tango Escape','3 Days / 2 Nights','Immerse yourself in Buenos Aires’ passionate tango culture and historic charm.','Plaza de Mayo, San Telmo, La Boca'),
+	 (53,'https://i.imgur.com/hiVHGRf.png','Argentine Capital Odyssey','7 Days / 6 Nights','Discover Buenos Aires’ vibrant neighborhoods and nearby cultural and natural gems.','Tigre Delta, Recoleta Cemetery, Colonia del Sacramento'),
+	 (54,'https://i.imgur.com/WWFqXuc.png','Lima Cultural Highlights','3 Days / 2 Nights','Uncover Lima’s rich history, vibrant cuisine, and coastal charm.','Plaza de Armas, Larcomar, Huaca Pucllana'),
+	 (54,'https://i.imgur.com/nF7PJ8Q.png','Peruvian Coastal Journey','7 Days / 6 Nights','Explore Lima and Peru’s coastal treasures, from ancient ruins to culinary delights.','Pachacamac, Paracas, Barranco'),
+	 (55,'https://i.imgur.com/wuk1Atf.png','Santiago City Highlights','3 Days / 2 Nights','Experience Santiago’s blend of colonial history and modern vibrancy.','Plaza de Armas, Cerro San Cristóbal, La Chascona'),
+	 (55,'https://i.imgur.com/ZTX3XFG.png','Andean Adventure','7 Days / 6 Nights','Dive into Santiago’s urban culture and Chile’s stunning Andean landscapes.','Valparaíso, Maipo Valley, Portillo');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (56,'https://i.imgur.com/M7mDU5w.png','Sydney Harbour Escape','3 Days / 2 Nights','Discover Sydney’s iconic waterfront, vibrant culture, and natural beauty.','Sydney Opera House, Bondi Beach, Harbour Bridge'),
+	 (56,'https://i.imgur.com/7SOaNmE.png','New South Wales Explorer','7 Days / 6 Nights','Explore Sydney and the surrounding region’s beaches, mountains, and cultural landmarks.','Blue Mountains, Hunter Valley, Manly Beach'),
+	 (57,'https://i.imgur.com/2xWUiVd.jpeg','Melbourne Cultural Highlights','3 Days / 2 Nights','Uncover Melbourne’s vibrant arts scene, laneways, and culinary delights.','Federation Square, Queen Victoria Market, Street Art Laneways'),
+	 (57,'https://i.imgur.com/XwpTBFv.png','Victoria Coastal Journey','7 Days / 6 Nights','Dive into Melbourne’s urban charm and Victoria’s stunning coastlines and wildlife.','Great Ocean Road, Phillip Island, Yarra Valley'),
+	 (58,'https://i.imgur.com/ubAqAaB.jpeg','Auckland City Highlights','3 Days / 2 Nights','Experience Auckland’s vibrant waterfront and volcanic landscapes.','Sky Tower, Waiheke Island, Auckland Domain'),
+	 (58,'https://i.imgur.com/H21009F.png','North Island Adventure','7 Days / 6 Nights','Explore Auckland and New Zealand’s North Island with cultural and geothermal wonders.','Rotorua, Waitomo Caves, Coromandel'),
+	 (59,'https://i.imgur.com/zvFaaBS.png','Suva Cultural Escape','3 Days / 2 Nights','Discover Suva’s colonial history and vibrant Fijian culture.','Fiji Museum, Colo-i-Suva Forest Park, Municipal Market'),
+	 (59,'https://i.imgur.com/wknlT6D.png','Fiji Island Journey','6 Days / 5 Nights','Immerse yourself in Suva and Fiji’s tropical islands and coral reefs.','Viti Levu, Sigatoka Sand Dunes, Sabeto Hot Springs'),
+	 (60,'https://i.imgur.com/82ruM31.png','Nadi Island Bliss','3 Days / 2 Nights','Relax in Nadi’s tropical paradise with beaches and cultural experiences.','Denarau Island, Garden of the Sleeping Giant, Sri Siva Subramaniya Temple'),
+	 (60,'https://i.imgur.com/Ba3p5kI.png','Fijian Archipelago Adventure','7 Days / 6 Nights','Explore Nadi and Fiji’s stunning islands with snorkeling and village visits.','Yasawa Islands, Mamanuca Islands, Natadola Beach');
+INSERT INTO travel_db.tours (city_id,image_url,name,days_nights,description,highlights) VALUES
+	 (61,'https://i.imgur.com/Mx9QWFx.jpeg','Honolulu Highlights','3 Days / 2 Nights','Experience Honolulu’s vibrant beaches, history, and Polynesian culture.','Waikiki Beach, Pearl Harbor, Iolani Palace'),
+	 (61,'https://i.imgur.com/KSF2w8X.jpeg','Oahu Island Explorer','7 Days / 6 Nights','Dive into Honolulu and Oahu’s lush rainforests, beaches, and cultural landmarks.','Hanauma Bay, North Shore, Polynesian Cultural Center'),
+	 (62,'https://i.imgur.com/LdrsCJ9.png','Papeete Tropical Escape','4 Days / 3 Nights','Relax in Papeete’s turquoise lagoons and vibrant Polynesian markets.','Point Venus, Papeete Market, Faarumai Waterfalls'),
+	 (62,'https://i.imgur.com/991UfjA.png','Tahiti Island Odyssey','7 Days / 6 Nights','Discover Papeete and Tahiti’s lush jungles, coral reefs, and island culture.','Moorea, Teahupo’o, Arahoho Blowhole');
